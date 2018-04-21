@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { Container, Row, Col } from 'reactstrap'
 import GoogleMap from './components/GoogleMap'
+import CGFooter from './components/CGFooter'
 
 const api_Url =
   'https://crimsonandgoldtrail.herokuapp.com/api/alpha/businesses'
@@ -24,14 +25,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Row>
+        <Row className="header">
           <Col>
-            <Navbar className="header" />
+            <Navbar />
           </Col>
         </Row>
-        <Row>
+        <Row className="map">
           <Col>
-            <GoogleMap className="map" businesses={this.state.businesses}/>
+            <GoogleMap businesses={this.state.businesses}/>
+          </Col>
+        </Row>
+        <Row className="footer">
+          <Col>
+            <CGFooter />
           </Col>
         </Row>
           

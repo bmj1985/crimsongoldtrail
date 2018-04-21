@@ -1,17 +1,13 @@
 .App {
-  display: grid !important;
-  grid-template-rows: 10% 80% 10% !important;
-  grid-template-areas: "header" "map" "footer" !important;
+  /* display: flex; */
 }
 
 .header {
-  grid-area: header !important;
+/* align-self: flex-start; */
 }
-.Google-Map {
-  grid-area: map !important;
-  width: 100vw;
-  height: 80vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden !important;
+.map {
+  height: 84vh;
+  /* grid-area: map !important; */
+}
+.footer {
 }
