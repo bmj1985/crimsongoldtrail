@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './styles/Reset.css'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/CGNavbar'
 import { Container, Row, Col } from 'reactstrap'
-import GoogleMap from './components/GoogleMap'
+import GoogleMap from './components/CGGoogleMap'
 import CGFooter from './components/CGFooter'
 
 const api_Url =

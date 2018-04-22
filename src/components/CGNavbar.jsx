@@ -21,7 +21,7 @@ import {
   Media
 } from 'reactstrap'
 import colors from '../styles/colors'
-import NavDropdown from './NavDropdown'
+import CGNavDropdown from './CGNavDropdown'
 import logo from '../assets/DUShield-assets/DUShield.svg'
 
 export default class Navigation extends React.Component {
@@ -48,7 +48,7 @@ export default class Navigation extends React.Component {
             <DropdownToggle nav caret style={{ color: colors.light}}>
               Menu
             </DropdownToggle>
-            <NavDropdown />
+            <CGNavDropdown />
           </Dropdown>
           <NavbarBrand style={{ color: colors.light, fontFamily: 'Futura PT', fontSize: '1.6rem', margin: '1vw', alignItems: 'center', display: 'flex' }}>
               <img src={logo} style={{ height: '5vh', margin: '1vw' }} />
