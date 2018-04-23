@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './styles/Reset.css'
 import './App.css'
 import CGHeader from './components/CGHeader'
@@ -27,8 +27,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <BrowserRouter>
-      <div>
         <Row className="header">
           <Col>
             <CGHeader />
@@ -37,8 +35,8 @@ class App extends Component {
         <Row className="map">
           <Col>
             <Switch>
-            <Route path='/addnewbusiness' component={() => (<AddNewBusiness /> )} />
-            <Route path="/" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 
+            <Route exact path='/addnewbusiness' component={AddNewBusiness} />
+            <Route exact path="/" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 
             </Switch>
           </Col>
         </Row>
@@ -48,8 +46,6 @@ class App extends Component {
           </Col>
         </Row>
         </div>
-        </BrowserRouter>
-      </div>
     );
   }
 }
