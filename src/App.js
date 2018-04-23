@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './styles/Reset.css'
 import './App.css'
-import Navbar from './components/CGNavbar'
+import CGHeader from './components/CGHeader'
 import { Container, Row, Col } from 'reactstrap'
-import GoogleMap from './components/CGGoogleMap'
+import CGGoogleMap from './components/CGGoogleMap'
 import CGFooter from './components/CGFooter'
 
 const api_Url =
@@ -27,12 +27,12 @@ class App extends Component {
       <div className="App">
         <Row className="header">
           <Col>
-            <Navbar />
+            <CGHeader />
           </Col>
         </Row>
         <Row className="map">
           <Col>
-            <GoogleMap businesses={this.state.businesses}/>
+            <CGGoogleMap businesses={this.state.businesses}/>
           </Col>
         </Row>
         <Row className="footer">

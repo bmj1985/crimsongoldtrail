@@ -3,11 +3,12 @@
 }
 
 .header {
-/* align-self: flex-start; */
+z-index: 100000;
 }
 .map {
   height: 84vh;
   /* grid-area: map !important; */
 }
 .footer {
+  z-index: 100000;
 }

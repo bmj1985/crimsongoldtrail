@@ -1,6 +1,4 @@
 import colors from '../colors.js'
 .cgheader {
-    width: 100vw;
-    background-color: colors.light;
-    
+
 }

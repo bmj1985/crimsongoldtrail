@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'
 import {
+  Col,
+  Row,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -10,54 +12,52 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-} from 'reactstrap';
+  DropdownItem
+} from 'reactstrap'
+import colors from '../styles/colors'
+import Icon from './Icon'
 
 export default class CGFooter extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
 
-    this.toggle = this.toggle.bind(this);
+    this.toggle = this.toggle.bind(this)
     this.state = {
-      isOpen: false,
-    };
+      isOpen: false
+    }
   }
-  toggle() {
+  toggle () {
     this.setState({
-      isOpen: !this.state.isOpen,
-    });
+      isOpen: !this.state.isOpen
+    })
   }
-  render() {
+
+  render () {
     return (
       <div className="cgfooter">
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar
+          light
+          expand="md"
+          style={{
+            justifyContent: 'flex-start',
+            height: '10vh',
+            backgroundColor: colors.dark
+          }}
+        >
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
-                </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <Col>
+                <Row>
+                  <NavItem>
+                    <Icon icon="location" style={{ color: colors.light }} />
+                  </NavItem>
+                </Row>
+              </Col>
             </Nav>
           </Collapse>
         </Navbar>
       </div>
-    );
+    )
   }
 }
