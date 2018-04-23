@@ -22,7 +22,7 @@ import {
 } from 'reactstrap'
 import colors from '../styles/colors'
 import CGNavDropdown from './CGNavDropdown'
-import logo from '../assets/DUShield-assets/DUShield.svg'
+import logo from '../assets/DUShield.png'
 
 export default class Navigation extends React.Component {
   constructor (props) {

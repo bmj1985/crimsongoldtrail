@@ -5,22 +5,19 @@ right: 3vw;
 bottom: 0;
 }
 #businessModal {
-    height: 100vh !important;
-    align-self: flex-end !important;
-}
-
-#businessModal .modal-content {
-    height: 84vh !important;
-    margin: 8vh 0 8vh 0 !important;
-    
+    height: 84vh;
+    align-self: flex-end;
+    width: 300px;
 }
 
 #businessModal .modal-content .modal-dialog {
-    /* height: 84vh !important; */
     margin: auto 0 !important;
 }
 
-.card {
-    height: 84vh;
-    max-width: 300px;
+#hidden {
+    display: none;
+}
+.mapContainer {
+    display: flex;
+    justify-content: flex-end;
 }
