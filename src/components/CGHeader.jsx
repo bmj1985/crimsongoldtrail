@@ -21,8 +21,10 @@ import {
   Media
 } from 'reactstrap'
 import colors from '../styles/colors'
+import '../styles/components/CGHeader.css'
 import CGNavDropdown from './CGNavDropdown'
 import logo from '../assets/DUShield.png'
+import { Link } from 'react-router-dom'
 
 export default class Navigation extends React.Component {
   constructor (props) {
@@ -53,7 +55,7 @@ export default class Navigation extends React.Component {
         <NavbarBrand style={{ color: colors.light, fontFamily: 'Futura PT', fontSize: '1.6rem', margin: '1vw', alignItems: 'center', display: 'flex' }}>
           <img src={logo} style={{ height: '5vh', margin: '1vw' }} />
           <h1>
-            Crimson & Gold Trail
+            <Link to="/" id='title'>Crimson & Gold Trail</Link>
           </h1>
         </NavbarBrand>
       </Navbar>

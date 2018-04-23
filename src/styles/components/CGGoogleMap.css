@@ -6,17 +6,25 @@ bottom: 0;
 }
 #businessModal {
     height: 84vh;
+    margin-right: 3vw;
     align-self: flex-end;
-    width: 300px;
+   
 }
-
-#businessModal .modal-content .modal-dialog {
-    margin: auto 0 !important;
+@media only screen and (min-width: 420px)  {
+    #businessModal {
+       width: 350px;
+    }
+}
+@media only screen and (max-width: 420px) and (min-width: 200px)  {
+    #businessModal {
+        width: 250px;
+    }
 }
 
 #hidden {
     display: none;
 }
+
 .mapContainer {
     display: flex;
     justify-content: flex-end;

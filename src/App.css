@@ -12,3 +12,51 @@ z-index: 100000;
 .footer {
   z-index: 100000;
 }
+a:link {
+  color: #222122;
+ }
+ 
+ /* visited link */
+ a:visited {
+   color: #222122;
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color: #8B6F4B;
+   text-decoration: none;
+ }
+ 
+ /* selected link */
+ a:active {
+   color: grey;
+ } 
+h1 + a:link {
+  color: #F7F7F7;
+}
+ /* visited link */
+ h1 + a:visited {
+   color: #F7F7F7;
+ }
+ 
+ /* mouse over link */
+ h1 + a:hover {
+   color: #8B6F4B;
+   text-decoration: none;
+ }
+ 
+ /* selected link */
+ h1 + a:active {
+   color: grey;
+ } 
+ /* unvisited link */
+/* dark: #222122,
+light: #F7F7F7,
+orange: #F26522,
+green: #9AA86E,
+teal: #00637b,
+lightblue: #0BB3E4,
+blue: #0048A5,
+yellow: #FDB813,
+crimson: #8B2332,
+gold: #8B6F4B */

@@ -1,0 +1,18 @@
+#title:link {
+    color: #F7F7F7;
+  }
+   /* visited link */
+#title:visited {
+     color: #F7F7F7;
+   }
+   
+   /* mouse over link */
+#title:hover{
+     color: #8B6F4B;
+     text-decoration: none;
+   }
+   
+   /* selected link */
+#title:active {
+     color: grey;
+   } 

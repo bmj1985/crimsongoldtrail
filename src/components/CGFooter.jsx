@@ -16,6 +16,7 @@ import {
 } from 'reactstrap'
 import colors from '../styles/colors'
 import Icon from './Icon'
+import '../styles/components/GGFooter.css'
 
 export default class CGFooter extends React.Component {
   constructor (props) {
@@ -50,7 +51,8 @@ export default class CGFooter extends React.Component {
               <Col>
                 <Row>
                   <NavItem>
-                    <Icon icon="location" style={{ color: colors.light }} />
+                    <Icon icon="location" style={{ color: colors.light }} ></Icon>
+                    <p id="du-near-me">DU Near Me</p>
                   </NavItem>
                 </Row>
               </Col>

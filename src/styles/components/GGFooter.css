@@ -1,0 +1,8 @@
+#du-near-me {
+    color: #FFFFFF;
+    display: inline;
+}
+.nav-item {
+    display: flex !important;
+    justify-content: space-between;
+}
