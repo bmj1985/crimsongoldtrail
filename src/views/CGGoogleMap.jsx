@@ -11,13 +11,17 @@ export class CGGoogleMap extends Component {
     super(props)
     this.state = {
       closeAll: false,
-      showHideCard: 'hidden'
+      showHideCard: 'hidden',
+      business: {}
     }
   }
 
-  toggleSideCard () {
+  toggleSideCard (e) {
     var css = (this.state.showHideCard === 'hidden') ? 'businessModal' : 'hidden'
-    this.setState({'showHideCard': css})
+    this.setState({
+      showHideCard: css,
+      business: e.business.business
+    })
   }
 
   render () {
@@ -33,11 +37,15 @@ export class CGGoogleMap extends Component {
           return business.Location.map(location => {
             return <Marker onClick={this.toggleSideCard.bind(this)} position={{ lat: location.Coordinates[0],
               lng: location.Coordinates[1] }}
-            icon={icon.Imgur_Icon} />
+            icon={icon.Imgur_Icon}
+            business={{business}} />
           })
         })}
-      </Map><Card id={this.state.showHideCard} size="sm"><p><Sidebar businesses={this.props.businesses}/></p>
-      </Card></div>
+      </Map>
+      <Card id={this.state.showHideCard} size="sm">
+        <Sidebar business={this.state.business} />
+      </Card>
+    </div>
   }
 }
 
