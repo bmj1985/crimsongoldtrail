@@ -1,0 +1,22 @@
+#demo {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    height: 8vh;
+    width: 16vw;
+    color: #222122
+}
+#demowrapper {
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    background: url('../../assets/LandingPageDemo.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#demo a {
+    color: #F7F7F7
+}

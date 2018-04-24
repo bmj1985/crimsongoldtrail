@@ -26,6 +26,7 @@ export class CGGoogleMap extends Component {
         google={this.props.google}
         zoom={11}
         zoomControl={true}
+        ControlPosition="BOTTOM_LEFT"
         initialCenter={{ lat: 39.706524, lng: -105.01 }}
         containerStyle={{height: '84vh', width: '100vw', padding: 0, margin: 0, overflow: 'hidden'}}>
         {this.props.businesses.map(business => {

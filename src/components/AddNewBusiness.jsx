@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap'
 
-export default class Example extends React.Component {
+export default class AddNewBusiness extends React.Component {
   render () {
     return (
       <Form>
         <FormGroup>
-          <Label for="exampleEmail">Email</Label>
-          <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <Label for="businessName">Business Name</Label>
+          <Input type="text" name="businessName" id="businessName" placeholder="Your business name, ex. Sazza Pizza + Salads" />
         </FormGroup>
         <FormGroup>
           <Label for="examplePassword">Password</Label>
@@ -16,9 +16,9 @@ export default class Example extends React.Component {
         <FormGroup>
           <Label for="exampleSelect">Select</Label>
           <Input type="select" name="select" id="exampleSelect">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option>Restaurant/Food</option>
+            <option>Beer/Wine/Spirits</option>
+            <option></option>
             <option>4</option>
             <option>5</option>
           </Input>

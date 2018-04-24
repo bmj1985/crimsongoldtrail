@@ -8,7 +8,7 @@ const colors = {
   blue: '#0048A5',
   yellow: '#FDB813',
   crimson: '#8B2332',
-  gold: '#8B6F4B',
-};
+  gold: '#8B6F4B'
+}
 
-module.exports = colors;
+module.exports = colors
