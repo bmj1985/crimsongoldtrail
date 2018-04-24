@@ -3,9 +3,9 @@ import { Route, Switch } from 'react-router-dom'
 import './styles/Reset.css'
 import './App.css'
 import CGHeader from './components/CGHeader'
-import { Container, Row, Col } from 'reactstrap'
-import CGGoogleMap from './components/CGGoogleMap'
 import CGFooter from './components/CGFooter'
+import { Container, Row, Col } from 'reactstrap'
+import CGGoogleMap from './views/CGGoogleMap'
 import AddNewBusinessView from './views/AddNewBusinessView'
 import DemoLanding from './views/DemoLanding'
 
@@ -33,7 +33,7 @@ class App extends Component {
             <CGHeader />
           </Col>
         </Row>
-        <Row className="map">
+        <Row className="map" businesses={this.state.businesses}>
           <Col>
             <Switch>
             <Route exact path='/addnewbusiness' component={AddNewBusinessView} />

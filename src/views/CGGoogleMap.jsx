@@ -2,7 +2,7 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 import React, { Component } from 'react'
 import config from '../config'
 import icon from '../assets/images'
-import BusinessModal from './BusinessModal'
+import Sidebar from '../components/Sidebar'
 import { Card, Button, Fade } from 'reactstrap'
 import '../styles/components/CGGoogleMap.css'
 
@@ -36,7 +36,7 @@ export class CGGoogleMap extends Component {
             icon={icon.Imgur_Icon} />
           })
         })}
-      </Map><Card id={this.state.showHideCard} size="sm"><p>some content</p>
+      </Map><Card id={this.state.showHideCard} size="sm"><p><Sidebar businesses={this.props.businesses}/></p>
       </Card></div>
   }
 }
