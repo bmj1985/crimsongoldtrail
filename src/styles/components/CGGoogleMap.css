@@ -4,11 +4,28 @@ top: 0;
 right: 3vw;
 bottom: 0;
 }
+.mapContainer {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
+    grid-area: "main";
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-gap: 0 0;
+}
+.Google-Map {
+    display: grid;
+}
 #businessModal {
-    height: 84vh;
-    margin-right: 3vw;
-    align-self: flex-end;
-   
+    align-self: end;
+    justify-self: end;
+}
+#businessModal.card {
+align-self: flex-end;
 }
 @media only screen and (min-width: 420px)  {
     #businessModal {
@@ -23,9 +40,4 @@ bottom: 0;
 
 #hidden {
     display: none;
-}
-
-.mapContainer {
-    /* display: flex;
-    justify-content: flex-end; */
 }

@@ -3,19 +3,29 @@
   }
    /* visited link */
 #title:visited {
-     color: $light;
+     color: #F7F7F7;
+     text-decoration: none;
+     list-style-type: none;
    }
    
    /* mouse over link */
 #title:hover{
      color: #8B6F4B;
      text-decoration: none;
+     list-style-type: none;
    }
    
    /* selected link */
 #title:active {
      color: grey;
+     text-decoration: none;
+     list-style-type: none;
    }
-.navbar-brand > img:nth-child(1) {
+#dulogo {
   height: 5vh !important;
+  display: inline;
+}
+#title {
+  display: inline;
+  align-self: center;
 }

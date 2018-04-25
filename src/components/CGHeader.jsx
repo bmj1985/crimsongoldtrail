@@ -52,12 +52,14 @@ export default class Navigation extends React.Component {
           </DropdownToggle>
           <CGNavDropdown />
         </Dropdown>
-        <NavbarBrand style={{ color: colors.light }}>
-          <img src={logo} />
-          <h1>
-            <Link to="/" id='title'>Crimson & Gold Trail</Link>
-          </h1>
-        </NavbarBrand>
+        <Link to="/">
+          <NavbarBrand style={{ color: colors.light }}>
+            <div>
+              <img id="dulogo" src={logo} />
+              <NavLink to="/" id='title'>Crimson & Gold Trail</NavLink>
+            </div>
+          </NavbarBrand>
+        </Link>
       </Navbar>
     </header>
   }

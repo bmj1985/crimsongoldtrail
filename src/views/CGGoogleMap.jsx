@@ -43,7 +43,7 @@ export class CGGoogleMap extends Component {
         })}
       </Map>
       <Card id={this.state.showHideCard} size="sm">
-        <Sidebar business={this.state.business} />
+        <Sidebar id="sidebar" business={this.state.business} />
       </Card>
     </div>
   }
