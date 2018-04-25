@@ -8,6 +8,12 @@ bottom: 0;
     justify-self: end;
     margin-right: 1vw;
     width: 300px;
+    height: 80vh;
+}
+#businessModal > div:nth-child(1) {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    grid-template-rows: repeat(12, 1fr);
 }
 .mapContainer {
     display: grid;

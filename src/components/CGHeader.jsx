@@ -54,7 +54,7 @@ export default class Navigation extends React.Component {
         </Dropdown>
         <Link to="/">
           <NavbarBrand style={{ color: colors.light }}>
-            <div>
+            <div id="logowrapper">
               <img id="dulogo" src={logo} />
               <NavLink to="/" id='title'>Crimson & Gold Trail</NavLink>
             </div>

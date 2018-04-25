@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap'
+import '../styles/components/Sidebar.css'
 
 const Sidebar = ({ business }) => (
   <div>
-    <CardImg top width="100%" src="../assets/jeffrogoff.jpg" alt="bioImage" />
+    <CardImg id="cardImage" top width="100%" src="../assets/jeffrogoff.jpg" alt="bioImage" />
     <CardBody>
-      <CardTitle>
+      <CardTitle id="businessName">
         {business.BusinessName}
       </CardTitle>
-      <CardSubtitle>Alumnus Name: {business.AlumName}</CardSubtitle>
-      <CardText>{business.Description}</CardText>
+      <CardSubtitle id="alumnusName">Alumnus Name: {business.AlumName}</CardSubtitle>
+      <CardText id="businessDesription">{business.Description}</CardText>
       <Button>Go Behind the Scenes with {business.AlumName}</Button>
     </CardBody>
   </div>
