@@ -4,21 +4,38 @@ top: 0;
 right: 3vw;
 bottom: 0;
 }
+.Google-Map {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
 #businessModal {
     justify-self: end;
-    margin-right: 1vw;
+    margin: 1vw;
     width: 300px;
-    height: 80vh;
+    height: 78vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
 }
 #businessModal > div:nth-child(1) {
     display: grid;
-    /* grid-template-columns: repeat(10, 1fr); */
+    width: 100%;
+    height: 75vh;
     grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 350px;
 }
+/* #root > div > div.main > div > div > div.mapContainer > div.Google-Map > div > div > div > div:nth-child(1) > div:nth-child(3) > div {
+    height: 80vh;
+} */
 .mapContainer {
     display: grid;
     grid-template-columns: 98% 2%;
     width: 100vw;
+    height: 80vh;
     margin: 0;
     padding: 0;
 }

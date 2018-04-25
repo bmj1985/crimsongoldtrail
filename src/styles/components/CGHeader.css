@@ -1,5 +1,6 @@
 #root > div > div.header > div > header > nav {
   height: 10vh;
+  justify-content: flex-start;
 }
 #logowrapper {
   display: flex;

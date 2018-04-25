@@ -12,7 +12,9 @@ const Sidebar = ({ business }) => (
       </CardTitle>
       <CardSubtitle id="alumnusName">Alumnus Name: {business.AlumName}</CardSubtitle>
       <CardText id="businessDesription">{business.Description}</CardText>
-      <Button>Go Behind the Scenes with {business.AlumName}</Button>
+      <div id="gobehindbuttonwrapper">
+        <Button id="gobehindthescenesbutton" class="btn-lg align-items-center">Go Behind the Scenes with <br></br>{business.AlumName}</Button>
+      </div>
     </CardBody>
   </div>
 )

@@ -1,19 +1,49 @@
 #cardImage {
     grid-row-start: 1;
     grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: start;
 }
 #businessName {
+    text-align: center;
     grid-row-start: 5;
     grid-row-end: 6;
-    border: solid 2px green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+}
+#businessModal > div > div {
+    max-width: 300px;
 }
 #alumnusName {
+    text-align: center;
     grid-row-start: 10;
     grid-row-end: 12;
-    border: solid 2px greenyellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
 }
 #businessDescription {
+    text-align: center;
     grid-row-start: 1;
     grid-row-end: 3;
-    border: solid 2px pink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+}
+.card-body {
+    width: 90%;
+    justify-items: center;
+    align-content: center;
+    place-self: center;
+    padding: 0;
+}
+#gobehindthescenesbutton {
+    align-self: center;
+}
+#gobehindbuttonwrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }

@@ -29,10 +29,10 @@ export class CGGoogleMap extends Component {
       <Map className="Google-Map"
         google={this.props.google}
         zoom={11}
-        zoomControl={true}
         ControlPosition="BOTTOM_LEFT"
         initialCenter={{ lat: 39.757538, lng: -104.939617 }}
-        containerStyle={{height: '84vh', width: '100vw', padding: 0, margin: 0, overflow: 'hidden'}}>
+        containerStyle={{height: '80vh'}}
+      >
         {this.props.businesses.map(business => {
           return business.Location.map(location => {
             return <Marker onClick={this.toggleSideCard.bind(this)} position={{ lat: location.Coordinates[0],
