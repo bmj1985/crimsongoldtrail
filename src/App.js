@@ -33,7 +33,7 @@ class App extends Component {
           </div>
         </div>
         <div className="main" businesses={this.state.businesses}>
-          <div>
+          <div class="mainwrapper">
             <Switch>
             <Route exact path='/addnewbusiness' component={AddNewBusinessView} />
             <Route exact path="/home" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 

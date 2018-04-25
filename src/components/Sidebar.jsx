@@ -4,7 +4,7 @@ import { Card, CardImg, CardText, CardBody,
 
 const Sidebar = ({ business }) => (
   <div>
-    <CardImg top width="90%" src="../assets/jeffrogoff.jpg" alt="bioImage" />
+    <CardImg top width="100%" src="../assets/jeffrogoff.jpg" alt="bioImage" />
     <CardBody>
       <CardTitle>
         {business.BusinessName}
