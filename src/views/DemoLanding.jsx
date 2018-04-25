@@ -6,6 +6,6 @@ import colors from '../styles/colors'
 
 export default class Demo extends Component {
   render () {
-    return <div id="demowrapper"><Button id="demo" color='dark' size="lg"><Link to="/home">Demo</Link></Button></div>
+    return <div id="demowrapper"><Button id="demo" color='dark' size="lg"><Link to="home">Demo</Link></Button></div>
   }
 }

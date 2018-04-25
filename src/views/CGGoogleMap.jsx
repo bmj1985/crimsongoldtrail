@@ -31,7 +31,7 @@ export class CGGoogleMap extends Component {
         zoom={11}
         zoomControl={true}
         ControlPosition="BOTTOM_LEFT"
-        initialCenter={{ lat: 39.706524, lng: -105.01 }}
+        initialCenter={{ lat: 39.757538, lng: -104.939617 }}
         containerStyle={{height: '84vh', width: '100vw', padding: 0, margin: 0, overflow: 'hidden'}}>
         {this.props.businesses.map(business => {
           return business.Location.map(location => {

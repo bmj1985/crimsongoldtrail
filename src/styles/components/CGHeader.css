@@ -3,7 +3,7 @@
   }
    /* visited link */
 #title:visited {
-     color: #F7F7F7;
+     color: $light;
    }
    
    /* mouse over link */
@@ -15,4 +15,7 @@
    /* selected link */
 #title:active {
      color: grey;
-   } 
+   }
+.navbar-brand > img:nth-child(1) {
+  height: 5vh !important;
+}

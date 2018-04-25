@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import './styles/Reset.css'
-import './App.css'
+import './App.css' 
 import CGHeader from './components/CGHeader'
 import CGFooter from './components/CGFooter'
-import { Container, Row, Col } from 'reactstrap'
+import { Container } from 'reactstrap'
 import CGGoogleMap from './views/CGGoogleMap'
 import AddNewBusinessView from './views/AddNewBusinessView'
 import DemoLanding from './views/DemoLanding'
@@ -28,25 +27,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Row className="header">
-          <Col>
+        <div className="header">
+          <div>
             <CGHeader />
-          </Col>
-        </Row>
-        <Row className="map" businesses={this.state.businesses}>
-          <Col>
+          </div>
+        </div>
+        <div className="main" businesses={this.state.businesses}>
+          <div>
             <Switch>
             <Route exact path='/addnewbusiness' component={AddNewBusinessView} />
             <Route exact path="/home" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 
             <Route exact path="/" component={DemoLanding} />
             </Switch>
-          </Col>
-        </Row>
-        <Row className="footer">
-          <Col>
+          </div>
+        </div>
+        <div className="footer">
+          <div>
             <CGFooter />
-          </Col>
-        </Row>
+          </div>
+        </div>
         </div>
     );
   }

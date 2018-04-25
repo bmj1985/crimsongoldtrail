@@ -40,8 +40,6 @@ export default class CGFooter extends React.Component {
           light
           expand="md"
           style={{
-            justifyContent: 'flex-start',
-            height: '10vh',
             backgroundColor: colors.dark
           }}
         >

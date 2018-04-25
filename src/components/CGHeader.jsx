@@ -45,15 +45,15 @@ export default class Navigation extends React.Component {
   }
   render () {
     return <header className="cgheader">
-      <Navbar expand="lg" style={{ justifyContent: 'flex-start', height: '10vh', backgroundColor: colors.dark }}>
+      <Navbar expand="lg" style={{ backgroundColor: colors.dark }}>
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
           <DropdownToggle nav caret style={{ color: colors.light}}>
               Menu
           </DropdownToggle>
           <CGNavDropdown />
         </Dropdown>
-        <NavbarBrand style={{ color: colors.light, fontFamily: 'Futura PT', fontSize: '1.6rem', margin: '1vw', alignItems: 'center', display: 'flex' }}>
-          <img src={logo} style={{ height: '5vh', margin: '1vw' }} />
+        <NavbarBrand style={{ color: colors.light }}>
+          <img src={logo} />
           <h1>
             <Link to="/" id='title'>Crimson & Gold Trail</Link>
           </h1>

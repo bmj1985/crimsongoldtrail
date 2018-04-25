@@ -1,8 +1,8 @@
-#du-near-me {
-    color: #FFFFFF;
-    display: inline;
+.navbar-expand-md {
+    height: 10vh;
+    border: solid 2px purple;
+    background-color: #222122 !important;
 }
-.nav-item {
-    display: flex !important;
-    justify-content: space-between;
+.cgfooter {
+    background-color: #222122 !important;
 }
