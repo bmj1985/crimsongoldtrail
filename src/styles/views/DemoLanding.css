@@ -1,4 +1,7 @@
 #demo {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     grid-row-start: 4;
     grid-row-end: 6;
     grid-column-start: 5;
@@ -8,12 +11,18 @@
     height: 8vh;
     width: 16vw;
     color: #F7F7F7;
+    grid-row: 12 / 14;
+    grid-column: 12 / 14;
+    align-self: center;
+    justify-self: center;
 }
 #demowrapper {
     display: grid;
-    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
-    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
-    background: url('../../assets/LandingPageDemo.png') no-repeat center center fixed;
+    height: 80vh;
+    width: 100vw;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background: url('../../assets/LandingPageDemo2.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
