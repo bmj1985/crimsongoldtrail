@@ -46,8 +46,8 @@ export default class CGFooter extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <Col>
-                <Row>
+              <Col id="footercolumn">
+                <Row id="footerrow">
                   <NavItem>
                     <Icon icon="location" style={{ color: colors.light }} ></Icon>
                     <p id="du-near-me">DU Near Me</p>

@@ -28,7 +28,7 @@ export class CGGoogleMap extends Component {
     return <div className="mapContainer">
       <Map className="Google-Map"
         google={this.props.google}
-        zoom={11}
+        zoom={12}
         ControlPosition="BOTTOM_LEFT"
         initialCenter={{ lat: 39.757538, lng: -104.939617 }}
         containerStyle={{height: '80vh'}}
