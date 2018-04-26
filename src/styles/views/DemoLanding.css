@@ -3,9 +3,11 @@
     grid-row-end: 6;
     grid-column-start: 5;
     grid-column-end: 7;
+}
+#demoButton {
     height: 8vh;
     width: 16vw;
-    color: #222122
+    color: #F7F7F7;
 }
 #demowrapper {
     display: grid;

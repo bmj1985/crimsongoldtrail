@@ -6,11 +6,11 @@ export default class CGNavDropdown extends React.Component {
   render () {
     return (
       <DropdownMenu>
-        <DropdownItem><Link to='/businesslistings'>Business Listings</Link></DropdownItem>
+        <Link to='/businesslistings'><DropdownItem>Business Listings</DropdownItem></Link>
         <DropdownItem>Adventures</DropdownItem>
         <DropdownItem>Self-Guided Tours</DropdownItem>
         <DropdownItem divider />
-        <DropdownItem><Link to={{ pathname: '/addnewbusiness' }}>Add Your Business</Link></DropdownItem>
+        <Link to={{ pathname: '/addnewbusiness' }}><DropdownItem>Add Your Business</DropdownItem></Link>
       </DropdownMenu>
     )
   }
