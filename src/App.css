@@ -20,10 +20,19 @@ grid-column-end: 13;
 grid-gap: 0 0;
 }
 .main {
-display: flex;
+grid-column: 1 / 13;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
 }
 .mainwrapper {
-  display: flex;
+  grid-column: 1 / 13;
+  grid-row: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  margin: 0;
+  overflow: scroll;
 }
 .mainwrapper > div:nth-child(1) {
   display: flex;

@@ -9,11 +9,11 @@ export default class AddNewBusiness extends React.Component {
         <FormGroup id="col1">
           <FormGroup>
             <Label for="businessName">Business Name</Label>
-            <Input type="text" name="businessName" id="businessName" placeholder="Your business name, ex. Sazza Pizza + Salads" />
+            <Input type="text" name="businessName" id="businessNameForm" placeholder="ex. Sazza Pizza + Salads" />
           </FormGroup>
           <FormGroup>
-            <Label for="">Label</Label>
-            <Input type="text" name="" id="" placeholder="" />
+            <Label for="alumName">Alumnus Name</Label>
+            <Input type="text" name="alumName" id="alumName" placeholder="Jane Doe" />
           </FormGroup>
           <FormGroup>
             <Label for="">Label</Label>
@@ -59,7 +59,7 @@ export default class AddNewBusiness extends React.Component {
         <FormGroup id="col2">
           <FormGroup>
             <Label for="businessName">Business Name</Label>
-            <Input type="text" name="businessName" id="businessName" placeholder="Your business name, ex. Sazza Pizza + Salads" />
+            <Input type="text" name="businessName" id="" placeholder="Your business name, ex. Sazza Pizza + Salads" />
           </FormGroup>
           <FormGroup>
             <Label for="">Label</Label>
@@ -106,9 +106,11 @@ export default class AddNewBusiness extends React.Component {
             <Input type="text" name="" id="" placeholder="" />
           </FormGroup>
         </FormGroup>
+        {/* <div id="submitNewBusinessWrapper"> */}
         <div id="submitNewBusiness">
-          <Button>Submit</Button>
+          <Button id="submitNewBusinessButton">Submit</Button>
         </div>
+        {/* </div> */}
       </Form>
     )
   }
