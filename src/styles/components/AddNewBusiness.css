@@ -4,13 +4,11 @@
     grid-row: 2 / 12;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* overflow: scroll; */
 }
 #col1 {
     width: 40vw;
     margin: 2vw;
     grid-column: 1 / 2;
-    height: 80vh;
 }
 #col2 {
     grid-column: 2 / 3;
@@ -24,7 +22,19 @@ grid-template-rows: repeat(4, 1fr);
 grid-template-columns: repeat(10, 1fr);
 }
 #submitNewBusinessButton {
-    border: solid 2px red;
     grid-column: 4 / 7;
     align-self: center;
+}
+#coordinatesFormGroup {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#latitudeGroup {
+    grid-column: 1 / 7;
+}
+#longitudeGroup{
+    grid-column: 7 / 13;
+}
+label {
+    margin: 0 1vw;
 }
