@@ -3,6 +3,8 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap'
 import '../styles/components/Sidebar.css'
 import image from '../assets/images'
+import { Link } from 'react-router-dom'
+
 const Sidebar = ({ business }) => (
   <div>
     <CardBody id="cardBody">
@@ -15,7 +17,7 @@ const Sidebar = ({ business }) => (
       <CardTitle id="business-description">We are sustainable food advocates by nature and embrace a planet-friendly lifestyle.
 We share this passion for responsibly grown food through our pizzas, salads, soups, and more.</CardTitle>
       <div id="gobehindbuttonwrapper">
-        <Button id="gobehindthescenesbutton" class="btn-lg align-items-center">Go Behind the Scenes with <br></br>{business.AlumName}</Button>
+        <Link to={{ pathname: '/behindthescenes/:id' }}><Button id="gobehindthescenesbutton" class="btn-lg align-items-center">Go Behind the Scenes with <br></br>{business.AlumName}</Button></Link>
       </div>
     </CardBody>
   </div>

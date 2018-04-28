@@ -7,6 +7,7 @@ import { Container } from 'reactstrap'
 import CGGoogleMap from './views/CGGoogleMap'
 import AddNewBusinessView from './views/AddNewBusinessView'
 import DemoLanding from './views/DemoLanding'
+import { BehindTheScenes } from './views/BehindTheScenes'
 
 const api_Url =
   'https://crimsonandgoldtrail.herokuapp.com/api/alpha/businesses'
@@ -38,6 +39,7 @@ class App extends Component {
             <Route exact path='/addnewbusiness' component={AddNewBusinessView} />
             <Route exact path="/home" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 
             <Route exact path="/" component={DemoLanding} />
+            <Route exact path="/behindthescenes/:id" component={BehindTheScenes} />
             </Switch>
           </div>
         </div>
