@@ -24,7 +24,10 @@ export class CGGoogleMap extends Component {
     })
   }
 
+
+
   render () {
+    if (this.props.nearMe === false) {
     return <div className="mapContainer">
       <Map className="Google-Map"
         google={this.props.google}
@@ -46,6 +49,30 @@ export class CGGoogleMap extends Component {
         <Sidebar id="sidebar" business={this.state.business} />
       </Card>
     </div>
+  } else {
+    return <div className="mapContainer">
+      <Map className="Google-Map"
+        google={this.props.google}
+        zoom={14}
+        ControlPosition="BOTTOM_LEFT"
+        initialCenter={{ lat: 39.757538, lng: -104.939617 }}
+        centerAroundCurrentLocation
+        containerStyle={{height: '80vh'}}
+      >
+        {this.props.businesses.map(business => {
+          return business.Location.map(location => {
+            return <Marker onClick={this.toggleSideCard.bind(this)} position={{ lat: location.Coordinates[0],
+              lng: location.Coordinates[1] }}
+            icon={icon.Imgur_Icon}
+            business={{business}} />
+          })
+        })}
+      </Map>
+      <Card id={this.state.showHideCard} size="sm">
+        <Sidebar id="sidebar" business={this.state.business} />
+      </Card>
+    </div>
+  }
   }
 }
 

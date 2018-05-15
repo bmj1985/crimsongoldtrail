@@ -13,7 +13,15 @@ const api_Url =
   'https://crimsonandgoldtrail.herokuapp.com/api/alpha/businesses'
 
 class App extends Component {
-  state = { businesses: [] };
+  constructor(props) {
+    super(props)
+    this.state = {
+      businesses: [],
+      nearMe: false
+    }
+
+  this.toggleNearMe=this.toggleNearMe.bind(this)
+  }
 
   componentDidMount() {
     this.getBusinesses();
@@ -23,6 +31,13 @@ class App extends Component {
     return fetch(api_Url)
       .then(response => response.json())
       .then(businesses => this.setState({ businesses }));
+  };
+
+  toggleNearMe(e) {
+    e.preventDefault()
+    this.setState({
+      nearMe: !this.state.nearMe
+    });
   }
 
   render() {
@@ -36,19 +51,33 @@ class App extends Component {
         <div className="main" businesses={this.state.businesses}>
           <div class="mainwrapper">
             <Switch>
-            <Route exact path='/addnewbusiness' component={AddNewBusinessView} />
-            <Route exact path="/home" component={() => (<CGGoogleMap businesses={this.state.businesses} />)} /> 
-            <Route exact path="/" component={DemoLanding} />
-            <Route exact path="/behindthescenes/:id" component={BehindTheScenes} />
+              <Route
+                exact
+                path="/addnewbusiness"
+                component={AddNewBusinessView}
+              />
+              <Route
+                exact
+                path="/home"
+                component={() => (
+                  <CGGoogleMap businesses={this.state.businesses} nearMe={this.state.nearMe} />
+                )}
+              />
+              <Route exact path="/" component={DemoLanding} />
+              <Route
+                exact
+                path="/behindthescenes/:id"
+                component={BehindTheScenes}
+              />
             </Switch>
           </div>
         </div>
         <div className="footer">
           <div>
-            <CGFooter />
+            <CGFooter toggleNearMe={this.toggleNearMe}/>
           </div>
         </div>
-        </div>
+      </div>
     );
   }
 }
