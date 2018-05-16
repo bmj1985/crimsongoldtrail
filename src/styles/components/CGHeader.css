@@ -3,6 +3,7 @@
   justify-content: flex-start;
 }
 #logowrapper {
+    margin-left: 1vw;
   display: flex;
 }
 #title {

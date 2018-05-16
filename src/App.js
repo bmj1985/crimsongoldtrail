@@ -37,7 +37,7 @@ class App extends Component {
     e.preventDefault()
     this.setState({
       nearMe: !this.state.nearMe
-    });
+    })
   }
 
   render() {

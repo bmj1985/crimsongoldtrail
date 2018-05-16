@@ -1,7 +1,6 @@
 html body.modal-open div div div.modal.fade.show div#businessModal.modal-dialog.modal-sm {
 position: absolute;
 top: 0;
-right: 3vw;
 bottom: 0;
 }
 .Google-Map {
@@ -12,7 +11,7 @@ bottom: 0;
 }
 #businessModal {
     justify-self: end;
-    margin: 1vw;
+    margin: 1vh 2vw 2vh 1vw;
     width: 300px;
     height: 78vh;
     display: grid;
@@ -28,9 +27,7 @@ bottom: 0;
     grid-template-columns: 1fr;
     max-width: 350px;
 }
-/* #root > div > div.main > div > div > div.mapContainer > div.Google-Map > div > div > div > div:nth-child(1) > div:nth-child(3) > div {
-    height: 80vh;
-} */
+
 .mapContainer {
     display: grid;
     grid-template-columns: 98% 2%;
@@ -38,6 +35,10 @@ bottom: 0;
     height: 80vh;
     margin: 0;
     padding: 0;
+}
+
+#marker {
+    height: 32px;
 }
 @media only screen and (max-width: 700px) and (min-width: 420px)  {
     #businessModal {
