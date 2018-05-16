@@ -5,19 +5,14 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
 } from 'reactstrap'
 import colors from '../styles/colors'
 import Icon from './Icon'
 import '../styles/components/GGFooter.css'
 import { Link } from 'react-router-dom'
+import poweredByDU from "../assets/DenverPoweredByDUWhiteText.png";
 
 export default class CGFooter extends React.Component {
   constructor (props) {
@@ -35,21 +30,17 @@ export default class CGFooter extends React.Component {
   }
 
   render () {
-    return <div className="cgfooter">
-        <Navbar light expand="md" style={{ backgroundColor: colors.dark }}>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <Col id="footercolumn">
-                <Row id="footerrow">
-                  <NavItem onClick={this.props.toggleNearMe}>
-                    <Icon icon="location" style={{ color: colors.light }} />
-                    <p id="du-near-me">DU Near Me</p>
-                  </NavItem>
-                </Row>
-              </Col>
-            </Nav>
-          </Collapse>
+    return <div>
+        <Navbar className="cgfooter" light expand="md" style={{ backgroundColor: colors.dark }}>
+          <NavItem className="footerColOne" onClick={this.props.toggleNearMe}>
+            <Icon icon="location" style={{ color: colors.light }} />
+            <p id="du-near-me">DU Near Me</p>
+          </NavItem>
+          <Link className="footerColTwo" to="/home">
+            <div id="poweredByDUwrapper">
+              <img id="poweredbydu" src={poweredByDU} alt="DENVER powered by DU" />
+            </div>
+          </Link>
         </Navbar>
       </div>;
   }

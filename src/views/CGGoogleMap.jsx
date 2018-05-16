@@ -23,7 +23,7 @@ export class CGGoogleMap extends Component {
          render() {
            if (this.props.nearMe === false) {
              return <div className="mapContainer">
-                 <Map className="Google-Map" google={this.props.google} zoom={12} ControlPosition="BOTTOM_LEFT" initialCenter={{ lat: 39.757538, lng: -104.939617 }} containerStyle={{ height: "80vh" }}>
+                 <Map className="Google-Map" google={this.props.google} zoom={12} ControlPosition="BOTTOM_LEFT" initialCenter={{ lat: 39.757538, lng: -104.939617 }} containerStyle={{ height: "82vh" }}>
                    {this.props.businesses.map(business => {
                      return business.Location.map(location => {
                        return <Marker id="marker" onClick={this.toggleSideCard.bind(this)} position={{ lat: location.Coordinates[0], lng: location.Coordinates[1] }} icon={images.Imgur_Icon} business={{ business }} />;
@@ -36,7 +36,7 @@ export class CGGoogleMap extends Component {
                </div>;
            } else {
              return <div className="mapContainer">
-                 <Map className="Google-Map" google={this.props.google} zoom={14} ControlPosition="BOTTOM_LEFT" initialCenter={{ lat: 39.757538, lng: -104.939617 }} centerAroundCurrentLocation containerStyle={{ height: "80vh" }}>
+                 <Map className="Google-Map" google={this.props.google} zoom={14} ControlPosition="BOTTOM_LEFT" initialCenter={{ lat: 39.757538, lng: -104.939617 }} centerAroundCurrentLocation containerStyle={{ height: "82vh" }}>
                    {this.props.businesses.map(business => {
                      return business.Location.map(location => {
                        return <Marker id="marker" onClick={this.toggleSideCard.bind(this)} position={{ lat: location.Coordinates[0], lng: location.Coordinates[1] }} icon={{ url: images.Imgur_Icon }} business={{ business }} />;

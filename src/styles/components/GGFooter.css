@@ -1,29 +1,27 @@
-.navbar-expand-md {
-    height: 10vh;
-    background-color: #222122 !important;
-}
 .cgfooter {
+    height: 8vh;
     background-color: #222122 !important;
-}
-svg {
-    align-self: center;
-    justify-self: center;
-}
-#root > div > div.footer > div > div > nav > div > ul > div > div > li {
     display: flex;
+    justify-content: space-between;
+}
+
+.footerColOne {
+color: #F7F7F7;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footerColTwo {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
 }
+
+#poweredbydu {
+    height: 5vh;
+}
+
 #du-near-me {
-    color: #F7F7F7;
-    margin: 5px;
-}
-#footerrow {
-
-}
-#footercolumn {
-
-}
-#root > div > div.footer > div > div > nav > div > ul {
-
+    margin-left: 10px;
 }

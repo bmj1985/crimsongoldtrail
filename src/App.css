@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 82% 10%;
   grid-template-areas: "header | main | footer";
   grid-gap: 0 0;
   height: 100vh;
@@ -39,7 +39,7 @@ grid-template-rows: repeat(12, 1fr);
 }
 .footer {
   display: grid;
-  height: 10vh;
+  height: 8vh;
   z-index: 100000;
   grid-area: "footer";
   grid-column-start: 1;
@@ -49,7 +49,7 @@ grid-template-rows: repeat(12, 1fr);
   grid-gap: 0 0;
 }
 #root > div > div.main > div > div > div.mapContainer > div.Google-Map > div > div > div > div:nth-child(1) > div:nth-child(3) > div {
-  height: 80vh;
+  height: 82vh;
 }
 a:link {
   color: #222122;
