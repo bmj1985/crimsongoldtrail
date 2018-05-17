@@ -11,33 +11,33 @@ const Sidebar = ({ business }) => (
       <CardImg
         id="cardImage"
         src={
-          business.Bio_Image_Url != undefined
-            ? business.Bio_Image_Url
-            : "http://via.placeholder.com/300"
+          business.Primary_Image_Url != undefined
+            ? business.Primary_Image_Url
+            : 'http://via.placeholder.com/300'
         }
         alt="Alum Bio Image"
       />
       <CardImg
         id="cardLogo"
         src={
-          business.Logo_Image_Url != undefined
-            ? business.Logo_Image_Url
-            : "http://www.seriousrequestzaanstad.nl/wp-content/uploads/2016/11/cropped-logo-placeholder-generic.200x200.png"
+          business.Logo_Url != undefined
+            ? business.Logo_Url
+            : 'http://www.seriousrequestzaanstad.nl/wp-content/uploads/2016/11/cropped-logo-placeholder-generic.200x200.png'
         }
         alt="Logo"
         width="300px"
       />
       <CardTitle id="businessName">
-        {business.BusinessName != undefined ? business.BusinessName : "Business Name"}
+        {business.BusinessName != undefined ? business.BusinessName : 'Business Name'}
       </CardTitle>
       <CardSubtitle id="alumnusName">
         {business.AlumName === undefined || business.AlumName.length < 1
-          ? "Alum Name (Degree, Class)"
+          ? 'Alum Name (Degree, Class)'
           : `${business.AlumName} (${business.Degree}, ${business.Class})`}
       </CardSubtitle>
       <CardTitle id="businessDescription">
         {business.Description === undefined || business.Description.length < 1
-          ? "Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam."
+          ? 'Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.'
           : business.Description}
       </CardTitle>
       <div id="gobehindbuttonwrapper">
@@ -47,12 +47,12 @@ const Sidebar = ({ business }) => (
             class="btn-lg align-items-center"
           >
             Go Behind the Scenes with <br />
-            {business.AlumName === undefined ? "Alum Name" : business.AlumName}
+            {business.AlumName === undefined ? 'Alum Name' : business.AlumName}
           </Button>
         </Link>
       </div>
     </CardBody>
   </div>
-);
+)
 
 export default Sidebar
