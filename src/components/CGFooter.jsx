@@ -7,12 +7,14 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  NavLink
 } from 'reactstrap'
 import colors from '../styles/colors'
 import Icon from './Icon'
 import '../styles/components/GGFooter.css'
 import { Link } from 'react-router-dom'
-import poweredByDU from "../assets/DenverPoweredByDUWhiteText.png";
+import { Redirect } from 'react-router'
+import poweredByDU from '../assets/DenverPoweredByDUWhiteText.png'
 
 export default class CGFooter extends React.Component {
   constructor (props) {
@@ -20,7 +22,7 @@ export default class CGFooter extends React.Component {
 
     this.toggle = this.toggle.bind(this)
     this.state = {
-      isOpen: false,
+      isOpen: false
     }
   }
   toggle () {
@@ -30,7 +32,11 @@ export default class CGFooter extends React.Component {
   }
 
   render () {
-    return <div>
+    const { redirect } = this.state
+    if (redirect) {
+      return <Redirect to='/home'/>
+    } else {
+      return <div>
         <Navbar className="cgfooter" light expand="md" style={{ backgroundColor: colors.dark }}>
           <NavItem className="footerColOne" onClick={this.props.toggleNearMe}>
             <Icon icon="location" style={{ color: colors.light }} />
@@ -42,6 +48,7 @@ export default class CGFooter extends React.Component {
             </div>
           </Link>
         </Navbar>
-      </div>;
+      </div>
+    }
   }
 }

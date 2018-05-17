@@ -17,7 +17,8 @@ class App extends Component {
     super(props)
     this.state = {
       businesses: [],
-      nearMe: false
+      nearMe: false,
+      redirect: false
     }
 
   this.toggleNearMe=this.toggleNearMe.bind(this)
@@ -36,8 +37,11 @@ class App extends Component {
   toggleNearMe(e) {
     e.preventDefault()
     this.setState({
-      nearMe: !this.state.nearMe
+      nearMe: !this.state.nearMe,
     })
+      this.setState(
+        { redirect: !this.state.redirect}
+      )
   }
 
   render() {

@@ -37,3 +37,7 @@
   height: 5vh !important;
   display: inline;
 }
+.dropdown-menu.show {
+  line-height: 250%;
+  /* height: 50vh; */
+}

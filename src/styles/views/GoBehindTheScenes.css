@@ -8,7 +8,7 @@ height: 82vh;
 }
 #questionWrapper {
     display: flex;
-    width: 67vw;
+    width: 60vw;
     height: 82vh;
     padding: 3vh 1vw 3vw 3vh;
     justify-content: center;
@@ -16,14 +16,14 @@ height: 82vh;
 }
 #businessInfoBoxWrapper {
     height: 82vh;
-    width: 33vw;
+    width: 40vw;
     padding: 3vh 3vw 3vh 0;
     justify-content: center;
 }
 
 #bannerImage {
-    width: 55vw;
-    height: 20vh;
+    max-width: 54vw;
+    /* height: 18vh; */
     /* align-self: center;
     justify-content: center;
     align-items: center; */

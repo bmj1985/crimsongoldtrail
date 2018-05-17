@@ -17,6 +17,11 @@ const Sidebar = ({ business }) => (
         }
         alt="Alum Bio Image"
       />
+      <CardSubtitle id="alumnusName">
+        {business.AlumName === undefined || business.AlumName.length < 1
+          ? 'Alum Name (Degree, Class)'
+          : `${business.AlumName} (${business.Degree}, ${business.Class})`}
+      </CardSubtitle>
       <CardImg
         id="cardLogo"
         src={
@@ -30,11 +35,9 @@ const Sidebar = ({ business }) => (
       <CardTitle id="businessName">
         {business.BusinessName != undefined ? business.BusinessName : 'Business Name'}
       </CardTitle>
-      <CardSubtitle id="alumnusName">
-        {business.AlumName === undefined || business.AlumName.length < 1
-          ? 'Alum Name (Degree, Class)'
-          : `${business.AlumName} (${business.Degree}, ${business.Class})`}
-      </CardSubtitle>
+      <a href={business.Url} target="_blank">
+        <CardTitle id="cardUrl">{business.Url}</CardTitle>
+      </a>
       <CardTitle id="businessDescription">
         {business.Description === undefined || business.Description.length < 1
           ? 'Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.'
