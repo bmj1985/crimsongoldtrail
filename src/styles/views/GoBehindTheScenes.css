@@ -1,0 +1,28 @@
+#behindTheScenesWrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#questionWrapper {
+    display: flex;
+    border: solid 1px gray;
+    width: 67vw;
+    height: 82vh;
+    padding: 3vh 3vw;
+    justify-content: center;
+
+}
+#businessInfoBoxWrapper {
+    border: solid 1px gray;
+    height: 82vh;
+    width: 33vw;
+    padding: 3vh 3vw;
+    justify-content: center;
+}
+
+#bannerImage {
+    width: 55vw;
+    /* align-self: center;
+    justify-content: center;
+    align-items: center; */
+}

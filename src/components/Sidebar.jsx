@@ -41,7 +41,7 @@ const Sidebar = ({ business }) => (
           : business.Description}
       </CardTitle>
       <div id="gobehindbuttonwrapper">
-        <Link to={{ pathname: "/behindthescenes/:id" }}>
+        <Link to={{ pathname: `/behindthescenes/${business._id}` }}>
           <Button
             id="gobehindthescenesbutton"
             class="btn-lg align-items-center"

@@ -1,7 +1,13 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Futura PT';
+  font-family: 'Futura';
   overflow:  hidden !important;
   box-sizing: border-box !important;
 }
+
+@font-face {
+    font-family: 'Futura';
+    src: url("./assets/FuturaStd-Medium.otf") format("opentype");
+}
+
