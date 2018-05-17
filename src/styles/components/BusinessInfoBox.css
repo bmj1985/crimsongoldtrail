@@ -1,0 +1,18 @@
+#behindTheScenesMap{
+    height: 20vh;
+    width: 600px;
+    border: solid 5px black;
+
+}
+#businessInfoName{
+        margin: 1vh 1vw;
+}
+#businessInfoUrl{
+        margin: 1vh 1vw;
+}
+#businessInfoAddress{
+        margin: 1vh 1vw;
+}
+#businessInfoPhone{
+        margin: 1vh 1vw;
+}

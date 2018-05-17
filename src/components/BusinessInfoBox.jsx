@@ -8,11 +8,11 @@ export default class BusinessInfoBox extends Component {
 
     render() {
         return <div>
-                <p id="1">Map goes here</p>
-                <h1>Business Name</h1>
-                <p>Business Url</p>
-                <p>Business Address</p>
-                <p>More Busines Info</p>
+                <p id="behindTheScenesMap">Map goes here</p>
+                <h1 id="businessInfoName">Business Name</h1>
+                <p id="businessInfoUrl">Business Url</p>
+                <p id="businessInfoAddress">Business Address</p>
+                <p id="businessInfoPhone">Business Address</p>
             </div>
     }
 }

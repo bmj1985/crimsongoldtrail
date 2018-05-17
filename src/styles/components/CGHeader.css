@@ -8,6 +8,7 @@
 }
 #title {
   align-self: center;
+  font-size: 1.75rem;
 }
 #title:link {
     color: #F7F7F7;

@@ -2,26 +2,28 @@
 display: flex;
 justify-content: center;
 align-items: center;
+overflow: scroll;
+width: 100vw;
+height: 82vh;
 }
 #questionWrapper {
     display: flex;
-    border: solid 1px gray;
     width: 67vw;
     height: 82vh;
-    padding: 3vh 3vw;
+    padding: 3vh 1vw 3vw 3vh;
     justify-content: center;
 
 }
 #businessInfoBoxWrapper {
-    border: solid 1px gray;
     height: 82vh;
     width: 33vw;
-    padding: 3vh 3vw;
+    padding: 3vh 3vw 3vh 0;
     justify-content: center;
 }
 
 #bannerImage {
     width: 55vw;
+    height: 20vh;
     /* align-self: center;
     justify-content: center;
     align-items: center; */

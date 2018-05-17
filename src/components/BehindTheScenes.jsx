@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import images from '../assets/images'
-import "../styles/components/BehindTheScenes.css";
+import '../styles/components/BehindTheScenes.css'
+
 
 export default class BehindTheScenes extends Component {
     constructor(props) {
         super(props)
-    }
-
-    componentDidMount() {
-        // console.log(business)
     }
 
     render () {
@@ -17,23 +14,23 @@ export default class BehindTheScenes extends Component {
         } else {
         return <div>
             <img id="bannerImage" src={images.BehindTheScenesPlaceholderImage} />
-            <h1>Behind the Scenes!</h1>
-            <h2>
+            <h1 id="behindthescenestitle">Behind the Scenes!</h1>
+            <h2 id="story">
               The{" "}
               {typeof this.props.business.BusinessName === "string"
                 ? this.props.business.BusinessName
                 : "Business Name"}{" "}
               Story
             </h2>
-            <p>
+            <p id="behindthescenesalumname">
               {typeof this.props.business.AlumName === "string"
                 ? this.props.business.AlumName
                 : "Alum Name"}
             </p>
-            <p id="questionOne">
+            <p class="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p>
-            <p id="answerOne">
+            <p class="answer">
               Etiam eget leo ut massa sagittis fringilla at et ipsum.
               Nulla eu quam ut leo vulputate pretium id non nibh. Cras
               tincidunt egestas venenatis. Donec consectetur fermentum
@@ -43,10 +40,10 @@ export default class BehindTheScenes extends Component {
               orci. Duis convallis, odio quis tristique semper, massa
               mauris tristique ex, at eleifend erat justo sit amet nisl.
             </p>
-            <p id="questionTwo">
+            <p class="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p>
-            <p id="answerTwo">
+            <p class="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
@@ -56,10 +53,10 @@ export default class BehindTheScenes extends Component {
                 orci. Duis convallis, odio quis tristique semper, massa
                 mauris tristique ex, at eleifend erat justo sit amet nisl.
             </p>
-            <p id="questionThree">
+            <p class="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p>
-            <p id="answerThree">
+            <p class="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
@@ -69,10 +66,10 @@ export default class BehindTheScenes extends Component {
                 orci. Duis convallis, odio quis tristique semper, massa
                 mauris tristique ex, at eleifend erat justo sit amet nisl.
             </p>
-            <p id="questionFour">
+            <p class="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
             </p>
-            <p id="answerFour">
+            <p class="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
@@ -82,7 +79,7 @@ export default class BehindTheScenes extends Component {
                 orci. Duis convallis, odio quis tristique semper, massa
                 mauris tristique ex, at eleifend erat justo sit amet nisl.
             </p>
-          </div>;
+          </div>
         }
     }
 }
