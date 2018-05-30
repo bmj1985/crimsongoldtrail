@@ -19,7 +19,7 @@ const Sidebar = ({ business }) => (
       />
       <CardSubtitle id="alumnusName">
         {business.AlumName === undefined || business.AlumName.length < 1
-          ? 'Alum Name (Degree, Class)'
+          ? ''
           : `${business.AlumName} (${business.Degree}, ${business.Class})`}
       </CardSubtitle>
       <CardImg
@@ -43,7 +43,7 @@ const Sidebar = ({ business }) => (
           ? 'Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam.'
           : business.Description}
       </CardTitle>
-      <div id="gobehindbuttonwrapper">
+      {business.AlumName === '' ? <div></div> : <div id="gobehindbuttonwrapper">
         <Link to={{ pathname: `/behindthescenes/${business._id}` }}>
           <Button
             id="gobehindthescenesbutton"
@@ -53,7 +53,7 @@ const Sidebar = ({ business }) => (
             {business.AlumName === undefined ? 'Alum Name' : business.AlumName}
           </Button>
         </Link>
-      </div>
+      </div>}
     </CardBody>
   </div>
 )
