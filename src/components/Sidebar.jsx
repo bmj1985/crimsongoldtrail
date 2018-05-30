@@ -36,7 +36,8 @@ const Sidebar = ({ business }) => (
         {business.BusinessName != undefined ? business.BusinessName : 'Business Name'}
       </CardTitle>
       <a href={business.Url} target="_blank">
-        <CardTitle id="cardUrl">{business.Url}</CardTitle>
+        {console.log(business.Url)}
+        <CardTitle id="cardUrl">{business.Url != undefined ? business.Url.replace('http://', '').replace('www.', '').replace('https://', '') : business.Url}</CardTitle>
       </a>
       <CardTitle id="businessDescription">
         {business.Description === undefined || business.Description.length < 1
