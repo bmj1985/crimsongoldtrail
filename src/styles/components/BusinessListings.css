@@ -1,0 +1,59 @@
+#businesslistings {
+    display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.businessListName {
+	flex: 1 0 400px;
+  box-sizing: border-box;
+  padding: 10px;
+line-height: 150%;
+    font-size: 1.25rem;
+}
+#businesslistingstitle {
+    font-size: 3rem;
+    margin: 2vh 2vw;
+    align-self: center;
+}
+
+#businessListingWrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 410px) {
+    #businessListName {
+      max-width: calc(50% - 10px);
+    }
+  }
+  @media (min-width: 620px) {
+    #businessListName {
+      max-width: calc(33.33333% - 10px);
+    }
+  }
+  @media (min-width: 830px) {
+    #businessListName {
+      max-width: calc(25% - 10px);
+    }
+  }
+  @media (min-width: 1040px) {
+    #businessListName {
+      max-width: calc(20% - 10px);
+    }
+  }
+  @media (min-width: 1250px) {
+    #businessListName {
+      max-width: calc(16.66667% - 10px);
+    }
+  }
+  @media (min-width: 1460px) {
+    #businessListName {
+      max-width: calc(14.28571% - 10px);
+    }
+  }
+  @media (min-width: 1670px) {
+    #businessListName {
+      min-width: calc(12.5% - 10px);
+    }
+  }

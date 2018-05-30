@@ -1,0 +1,40 @@
+ul {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 5vw 0 5vw;
+}
+#tourwrapper {
+ margin: 1vh 1vw;
+}
+
+#tourcard {
+    width: 20vw;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tourbutton {
+    margin: 1vh 1vw;
+    align-self: center;
+    width: 10vw;
+}
+
+.card-text {
+    line-height: 150%;
+}
+.card-title {
+    font-size: 1.25rem;
+    margin: 1vh 0 1vh 0;
+}
+.card-subtitle {
+    font-size: 0.9rem;
+    margin: 1vh 0 1vh 0;
+}
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

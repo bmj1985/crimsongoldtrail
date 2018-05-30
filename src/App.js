@@ -8,6 +8,8 @@ import CGGoogleMap from './views/CGGoogleMap'
 import AddNewBusinessView from './views/AddNewBusinessView'
 import DemoLanding from './views/DemoLanding'
 import { GoBehindTheScenes } from './views/GoBehindTheScenes'
+import Tours from './components/Tours'
+import BusinessListings from './components/BusinessListings'
 
 const api_Url =
   'https://crimsonandgoldtrail.herokuapp.com/api/alpha/businesses'
@@ -75,6 +77,8 @@ class App extends Component {
                   <GoBehindTheScenes businesses={this.state.businesses} />
                 )}
               />
+              <Route exact path="/tours" component={Tours} />
+              <Route exact path="/businesslistings" component={BusinessListings} />
             </Switch>
           </div>
         </div>
