@@ -26,10 +26,10 @@ export default class BehindTheScenes extends Component {
             ? this.props.business.AlumName
             : 'Alum Name'}
         </p>
-        <p class="question">
+        <p className="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
         </p>
-        <p class="answer">
+        <p className="answer">
               Etiam eget leo ut massa sagittis fringilla at et ipsum.
               Nulla eu quam ut leo vulputate pretium id non nibh. Cras
               tincidunt egestas venenatis. Donec consectetur fermentum
@@ -39,10 +39,10 @@ export default class BehindTheScenes extends Component {
               orci. Duis convallis, odio quis tristique semper, massa
               mauris tristique ex, at eleifend erat justo sit amet nisl.
         </p>
-        <p class="question">
+        <p className="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
         </p>
-        <p class="answer">
+        <p className="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
@@ -52,10 +52,10 @@ export default class BehindTheScenes extends Component {
                 orci. Duis convallis, odio quis tristique semper, massa
                 mauris tristique ex, at eleifend erat justo sit amet nisl.
         </p>
-        <p class="question">
+        <p className="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
         </p>
-        <p class="answer">
+        <p className="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
@@ -65,10 +65,10 @@ export default class BehindTheScenes extends Component {
                 orci. Duis convallis, odio quis tristique semper, massa
                 mauris tristique ex, at eleifend erat justo sit amet nisl.
         </p>
-        <p class="question">
+        <p className="question">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit?
         </p>
-        <p class="answer">
+        <p className="answer">
                 Etiam eget leo ut massa sagittis fringilla at et ipsum.
                 Nulla eu quam ut leo vulputate pretium id non nibh. Cras
                 tincidunt egestas venenatis. Donec consectetur fermentum
