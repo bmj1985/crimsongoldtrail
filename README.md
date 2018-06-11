@@ -6,7 +6,7 @@ Easily sort and find Colorado huts and yurts in a single-page full screen mappin
 [Server-side Repo](https://github.com/bmj1985/cgtrail-server)<br>
 
 <div>
-<img src="./ColoradoHutandYurtFinderScreenShot.png"/>
+<img src="./screenshot.png"/>
 </div>
 
 ## App Description
