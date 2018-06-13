@@ -30,7 +30,7 @@ Brandon Johnson - Full Stack Web Developer - Denver, Colorado
 
 [GitHub](https://github.com/bmj1985)
 
-[LinkedIn](www.linkedin.com/in/bmj1985/)
+[LinkedIn](http://www.linkedin.com/in/bmj1985/)
 
 ## License
 MIT
